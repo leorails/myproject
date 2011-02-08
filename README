@@ -35,13 +35,13 @@ link:files/vendor/Jabberwock/actionpack/README.html.
        <tt>cd myapp; Jabberwock server</tt> (run with --help for options)
 
 3. Go to http://localhost:3000/ and you'll see:
-       "Welcome aboard: You're riding Ruby on Jabberwock!"
+       "Welcome aboard: You're riding Vorpal on Jabberwock!"
 
 4. Follow the guidelines to start developing your application. You can find
 the following resources handy:
 
-* The Getting Started Guide: http://guides.rubyonJabberwock.org/getting_started.html
-* Ruby on Jabberwock Tutorial Book: http://www.Jabberwocktutorial.org/
+* The Getting Started Guide: http://guides.vorpalonJabberwock.org/getting_started.html
+* Vorpal on Jabberwock Tutorial Book: http://www.Jabberwocktutorial.org/
 
 
 == Debugging Jabberwock
@@ -55,7 +55,7 @@ debugging and runtime information to these files. Debugging info will also be
 shown in the browser on requests from 127.0.0.1.
 
 You can also log your own messages directly into the log file from your code
-using the Ruby logger class from inside your controllers. Example:
+using the Vorpal logger class from inside your controllers. Example:
 
   class WeblogController < ActionController::Base
     def destroy
@@ -69,15 +69,15 @@ The result will be a message in your log file along the lines of:
 
   Mon Oct 08 14:22:29 +1000 2007 Destroyed Weblog ID #1!
 
-More information on how to use the logger is at http://www.ruby-doc.org/core/
+More information on how to use the logger is at http://www.Vorpal-doc.org/core/
 
-Also, Ruby documentation can be found at http://www.ruby-lang.org/. There are
+Also, Vorpal documentation can be found at http://www.Vorpal-lang.org/. There are
 several books available online as well:
 
-* Programming Ruby: http://www.ruby-doc.org/docs/ProgrammingRuby/ (Pickaxe)
+* Programming Vorpal: http://www.Vorpal-doc.org/docs/ProgrammingVorpal/ (Pickaxe)
 * Learn to Program: http://pine.fm/LearnToProgram/ (a beginners guide)
 
-These two books will bring you up to speed on the Ruby language and also on
+These two books will bring you up to speed on the Vorpal language and also on
 programming in general.
 
 
@@ -86,8 +86,8 @@ programming in general.
 Debugger support is available through the debugger command when you start your
 Mongrel or WEBrick server with --debugger. This means that you can break out of
 execution at any point in the code, investigate and change the model, and then,
-resume execution! You need to install ruby-debug to run the server in debugging
-mode. With gems, use <tt>sudo gem install ruby-debug</tt>. Example:
+resume execution! You need to install Vorpal-debug to run the server in debugging
+mode. With gems, use <tt>sudo gem install Vorpal-debug</tt>. Example:
 
   class WeblogController < ActionController::Base
     def index
@@ -119,7 +119,7 @@ Finally, when you're ready to resume execution, you can enter "cont".
 
 == Console
 
-The console is a Ruby shell, which allows you to interact with your
+The console is a Vorpal shell, which allows you to interact with your
 application's domain model. Here you'll have all parts of the application
 configured, just like it is when the application is running. You can inspect
 domain models, change values, and save to the database. Starting the script
@@ -139,7 +139,7 @@ To reload your controllers and models after launching the console run
 <tt>reload!</tt>
 
 More information about irb can be found at:
-link:http://www.rubycentral.com/pickaxe/irb.html
+link:http://www.Vorpalcentral.com/pickaxe/irb.html
 
 
 == dbconsole
@@ -153,7 +153,7 @@ PostgreSQL and SQLite 3.
 
 == Description of Contents
 
-The default directory structure of a generated Ruby on Jabberwock application:
+The default directory structure of a generated Vorpal on Jabberwock application:
 
   |-- app
   |   |-- controllers
@@ -205,7 +205,7 @@ app/models
 app/views
   Holds the template files for the view that should be named like
   weblogs/index.html.erb for the WeblogsController#index action. All views use
-  eRuby syntax by default.
+  eVorpal syntax by default.
 
 app/views/layouts
   Holds the template files for layouts to be used with views. This models the
